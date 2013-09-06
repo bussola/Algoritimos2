@@ -1,0 +1,45 @@
+
+void troca(int v[], int i, int j){
+        int temp = v[i];
+        v[i] = v[j];
+        v[j] = temp;
+}
+
+
+void selection_sort(int v[], int n){
+        int i, min, j;
+        for(i = 0; i < n-1; i++){
+                min = i;
+                for(j = i + 1; j < n; j++){
+                        if(v[min] > v[j]){
+                                min = j;
+                        }
+                }
+		troca(v, min, i);
+        }
+}
+
+void bubble_sort(int v[], int n){
+	int i, j;
+	for(i = n-1; i > 0; i--){
+		for(j = 1; j <=i; j++){
+			if(v[j-1] > v[j]){
+				troca(v, j-1, j);
+			}
+		}
+	}
+}
+
+void insertion_sort(int v[], int n){
+	int i, b, valor;
+	for(i = 1; i < n-1; i++){
+		valor = v[i];
+		b = i;
+		while(b > 0 && v[b-1] > valor){
+			v[b] = v[b-1];
+			b--;
+		}
+		v[b] = valor;
+	}
+}
+

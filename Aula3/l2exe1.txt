@@ -1,0 +1,10 @@
+Exercício 1 lista 2
+
+Algorítimos e programação 2
+
+a)Verdadeiro
+b)Verdadeiro
+c)Verdadeiro
+d)falso
+e)Verdadeiro
+f)falso

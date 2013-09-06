@@ -1,0 +1,4 @@
+void troca(int v[], int i, int j);
+void selection_sort(int v[], int n);
+void bubble_sort(int v[], int n);
+void insertion_sort(int v[], int n);
